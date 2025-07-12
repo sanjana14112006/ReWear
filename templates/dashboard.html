@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo">ReWear Store</div>
+      <div class="profile">Hello, {{ username }}</div>
+    </header>
+
+    <section class="search-section">
+      <input type="text" class="search-bar" placeholder="Search products...">
+      <button class="search-btn">🔍</button>
+    </section>
+
+    <section class="hero-section">
+      <div class="hero-image">
+        <h2>Welcome to the ReWear club</h2>
+        <p>Discover the latest fashion trends</p>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h3>Categories</h3>
+      <div class="category-grid">
+        <div class="category-card">Men's Wear</div>
+        <div class="category-card">Women's Wear</div>
+        <div class="category-card">Kids</div>
+        <div class="category-card">Accessories</div>
+        <div class="category-card">Shoes</div>
+        <div class="category-card">Winter Wear</div>
+      </div>
+    </section>
+
+    <section class="products">
+      <h3>Product Listings</h3>
+      <div class="product-grid">
+        <div class="product-card">Product 1</div>
+        <div class="product-card">Product 2</div>
+        <div class="product-card">Product 3</div>
+        <div class="product-card">Product 4</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
